@@ -39,7 +39,7 @@ const CreateGroup = ({ setOpen }) => {
     };
 
     return (
-        <div className='relative bg-white pt-6 pl-8 pr-8 pb-4 w-[550px] flex flex-col space-y-5 rounded-lg'>
+        <div className='relative bg-white pt-6 pl-8 pr-8 pb-4 w-[550px] max-sm:w-[450px] flex flex-col space-y-5 rounded-lg'>
             <h1 className="font-semibold text-2xl">Create New Group</h1>
             <form onSubmit={handleCreateGroup} className="space-y-8">
                 <div className="flex justify-center items-center space-x-10">
