@@ -118,7 +118,7 @@ const NotePage = () => {
                     value={text}
                 />
                 <button
-                    type='submit'
+                    onClick={handleCreateNote}
                     className="absolute bottom-6 right-10 inline-flex justify-end items-end h-6 w-6 cursor-pointer"
                 >
                     <svg width="35" height="29" viewBox="0 0 35 29" fill="none" xmlns="http://www.w3.org/2000/svg">
