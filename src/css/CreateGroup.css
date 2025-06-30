@@ -1,0 +1,138 @@
+.create-group-container {
+    position: relative;
+    background-color: white;
+    padding: 12px 32px;
+    width: 550px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 640px) {
+    .create-group-container {
+        width: 380px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+}
+
+.create-group-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.create-group-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+@media (max-width: 640px) {
+    .create-group-form {
+        gap: 20px;
+    }
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-row-2 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (max-width: 640px) {
+    .form-row-2 {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .form-row {
+        gap: 16px;
+    }
+}
+
+.form-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.form-input {
+    border: 1px solid #d1d5db;
+    border-radius: 30px;
+    padding: 8px 24px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+    .form-input {
+        padding-left: 16px;
+        padding-right: 20px;
+    }
+}
+
+.color-options {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 640px) {
+    .color-options {
+        gap: 6px;
+    }
+}
+
+.color-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .color-circle {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.form-submit-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+    .form-submit-row {
+        justify-content: center;
+    }
+}
+
+.submit-btn {
+    background-color: #001F8B;
+    color: white;
+    font-size: 1.25rem;
+    padding: 4px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+@media (max-width: 640px) {
+    .submit-btn {
+        margin-top: 15px;
+        padding: 4px 80px;
+    }
+}
+
+.submit-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

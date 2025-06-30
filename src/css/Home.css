@@ -1,0 +1,46 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 18px;
+    background-color: #DAE5F5;
+}
+
+@media (max-width: 640px) {
+    .home-container {
+        display: none;
+    }
+}
+
+.home-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin: 0px auto 5px auto;
+}
+
+.home-description {
+    font-weight: 500;
+    margin: 2px auto;
+}
+
+.home-footer {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.home-encryption-text {
+    font-family: sans-serif;
+    font-weight: 500;
+}

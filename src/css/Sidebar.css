@@ -1,0 +1,68 @@
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100vh;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .sidebar.hidden-on-mobile {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar-title {
+  font-weight: 600;
+  font-size: 1.875rem;
+  margin: 60px auto 20px auto;
+}
+
+.group-scroll-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.group-scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.group-scroll-container::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 6px;
+}
+
+.group-scroll-container::-webkit-scrollbar-track {
+  background-color: #d1d5db;
+  border-radius: 6px;
+}
+
+.create-group-btn {
+  position: fixed;
+  bottom: 12px;
+  left: 265px;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
+  margin-right: 0.75rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(47, 47, 47, 0.75);
+  z-index: 50;
+}
+
+.modal-content {
+  position: relative;
+}
